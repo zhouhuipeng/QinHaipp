@@ -24,6 +24,8 @@ public class download extends Activity {//下载列表类
                 Intent intent =new Intent();
                 intent.setClass(download.this,mainpager.class);
                 startActivity(intent);
+                overridePendingTransition( R.anim.in_from_right,
+                        R.anim.out_to_left);
                 finish();
             }
         });

@@ -24,6 +24,8 @@ public class timeplay extends Activity {//历史播放类
                 Intent intent =new Intent();
                 intent.setClass(timeplay.this,mainpager.class);
                 startActivity(intent);
+                overridePendingTransition( R.anim.in_from_right,
+                        R.anim.out_to_left);
                 finish();
             }
         });
