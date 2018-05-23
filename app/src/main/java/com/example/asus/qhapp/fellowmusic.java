@@ -24,7 +24,6 @@ public class fellowmusic extends Activity {//伴奏音乐类
                 Intent intent =new Intent();
                 intent.setClass(fellowmusic.this,mainpager.class);
                 startActivity(intent);
-                finish();
             }
         });
     }
