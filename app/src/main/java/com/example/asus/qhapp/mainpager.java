@@ -12,7 +12,7 @@ import android.widget.Button;
  */
 
 public class mainpager extends  Activity{//主界面类
-    private Button location,download,fellowmusic,time;
+    private Button location,download,fellowmusic,time,search;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +21,18 @@ public class mainpager extends  Activity{//主界面类
         download=(Button)findViewById(R.id.download);
         fellowmusic=(Button)findViewById(R.id.fellowmusic);
         time=(Button)findViewById(R.id.time);
+        search=(Button) findViewById(R.id.search);
+
+        search.setOnClickListener(new View.OnClickListener() {//进入搜索界面
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(mainpager.this,searchmusic.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
         location.setOnClickListener(new View.OnClickListener() {//点击进入本地音乐界面
             @Override
