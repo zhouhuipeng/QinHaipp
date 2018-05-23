@@ -24,6 +24,7 @@ public class localmusic extends Activity {//本地音乐类
                 Intent intent =new Intent();
                 intent.setClass(localmusic.this,mainpager.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
