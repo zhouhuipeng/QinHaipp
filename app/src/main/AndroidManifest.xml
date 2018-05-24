@@ -23,6 +23,8 @@
         <activity android:name=".fellowmusic"></activity>
         <activity android:name=".download"></activity>
         <activity android:name=".timeplay"></activity>
-        <activity android:name=".searchmusic"></activity>
+        <activity android:name=".searchmusic"
+            android:windowSoftInputMode="adjustNothing"></activity>
+        <activity android:name=".play"></activity>
 </application>
 </manifest>
