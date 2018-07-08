@@ -1,6 +1,8 @@
 package com.example.asus.qhapp;
 
 import android.app.Activity;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -17,61 +19,11 @@ public class mainpager extends  Activity{//主界面类
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainpager);
-        location=(Button)findViewById(R.id.location);
-        download=(Button)findViewById(R.id.download);
-        fellowmusic=(Button)findViewById(R.id.fellowmusic);
-        time=(Button)findViewById(R.id.time);
-        search=(Button) findViewById(R.id.search);
-
-        search.setOnClickListener(new View.OnClickListener() {//进入搜索界面
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(mainpager.this,searchmusic.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-
-        location.setOnClickListener(new View.OnClickListener() {//点击进入本地音乐界面
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(mainpager.this,localmusic.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        download.setOnClickListener(new View.OnClickListener() {//点击进入下载列表界面
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(mainpager.this,download.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        fellowmusic.setOnClickListener(new View.OnClickListener() {//点击进入伴奏音乐界面
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(mainpager.this,fellowmusic.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        time.setOnClickListener(new View.OnClickListener() {//点击进入历史播放界面
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(mainpager.this,timeplay.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+        FragmentManager manager = getFragmentManager();//创建fragment对象
+        FragmentTransaction transaction = manager.beginTransaction();//获取fragment
+        //transaction.add(R.id.ly_under,new things());
+        transaction.replace(R.id.ly_center, new Home_pagerfgment());//调用fragment中的事物进行动态操作add添加资源id的对象
+//提交事物
+        transaction.commit();
     }
 }

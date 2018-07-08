@@ -19,11 +19,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".mainpager"></activity>
-        <activity android:name=".localmusic"></activity>
-        <activity android:name=".fellowmusic"></activity>
-        <activity android:name=".download"></activity>
-        <activity android:name=".timeplay"></activity>
-        <activity android:name=".searchmusic"
+        <activity android:name=".Localmusicfgment"></activity>
+        <activity android:name=".Fellowmusicfgment"></activity>
+        <activity android:name=".Downloadfgment"></activity>
+        <activity android:name=".Timeplayfgment"></activity>
+        <activity android:name=".Searchmusicfgment"
             android:windowSoftInputMode="adjustNothing"></activity>
         <activity android:name=".play"></activity>
 </application>
