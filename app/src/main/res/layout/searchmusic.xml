@@ -48,9 +48,37 @@
 
         </LinearLayout>
     </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_below="@+id/toolbar2"
+        android:id="@+id/starsort"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/starsort"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text=" 歌 手 分 类 >"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/hello"
+        android:layout_below="@+id/starsort"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#EBEBEB" />
      <ListView
          android:id="@+id/searchresult"
-         android:layout_below="@+id/toolbar2"
+         android:layout_below="@+id/hello"
          android:layout_width="match_parent"
          android:layout_height="480dp"
          android:layout_alignParentBottom="true">
