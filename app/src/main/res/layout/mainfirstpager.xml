@@ -65,8 +65,6 @@
         android:layout_width="match_parent"
         android:layout_marginTop="10dp"
         android:layout_height="3dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
         android:background="#EBEBEB" />
 
 
@@ -196,8 +194,6 @@
             android:layout_width="fill_parent"
             android:layout_marginTop="10dp"
             android:layout_height="8dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:background="#EBEBEB" />
 
 

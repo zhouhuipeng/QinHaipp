@@ -23,6 +23,7 @@
         android:layout_alignParentStart="true"
         android:id="@+id/linearLayout2">
         <ImageView
+            android:id="@+id/playpager"
             android:layout_width="68dp"
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
@@ -37,10 +38,9 @@
             <SeekBar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
-                android:id="@+id/sbr" />
+                android:id="@+id/seekbarmusic" />
             <LinearLayout
-                android:layout_below="@+id/sbr"
+                android:layout_below="@+id/seekbarmusic"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
@@ -70,17 +70,19 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="horizontal">
+
                     <LinearLayout
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:layout_weight="1">
-                        <Button
+
+                        <ImageView
                             android:id="@+id/musicplay"
                             android:layout_width="54dp"
                             android:layout_height="wrap_content"
-                            android:background="@mipmap/play"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1"
+                            android:background="@mipmap/play" />
 
                         <ImageView
                             android:id="@+id/imageView3"
@@ -88,20 +90,22 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1" />
 
-                        <Button
+                        <ImageView
                             android:layout_width="54dp"
                             android:layout_height="wrap_content"
-                            android:background="@mipmap/nextsong"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1"
+                            android:background="@mipmap/nextsong" />
+
                         <ImageView
                             android:layout_width="14dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"/>
-                        <Button
+                            android:layout_weight="1" />
+
+                        <ImageView
                             android:layout_width="54dp"
                             android:layout_height="wrap_content"
-                            android:background="@mipmap/mymusic"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1"
+                            android:background="@mipmap/mymusic" />
                     </LinearLayout>
 
                 </LinearLayout>

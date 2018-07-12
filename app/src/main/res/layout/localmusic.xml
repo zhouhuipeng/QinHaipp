@@ -26,6 +26,7 @@
         </LinearLayout>
     </android.support.v7.widget.Toolbar>
     <ListView
+        android:id="@+id/mylocalmusic"
         android:layout_below="@+id/localmusic"
         android:layout_width="match_parent"
         android:layout_height="match_parent">

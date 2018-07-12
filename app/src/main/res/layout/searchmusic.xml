@@ -49,6 +49,7 @@
         </LinearLayout>
     </android.support.v7.widget.Toolbar>
     <LinearLayout
+        android:layout_marginTop="3dp"
         android:layout_below="@+id/toolbar2"
         android:id="@+id/starsort"
         android:layout_width="match_parent"
