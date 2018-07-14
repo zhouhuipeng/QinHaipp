@@ -11,13 +11,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Asus on 2018/5/23.
  */
 
 public class Timeplayfgment extends Fragment {//历史播放类
-
+    private List<Timeplay> timeplayList=new ArrayList<>();
+    ListView listView;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -34,8 +39,24 @@ public class Timeplayfgment extends Fragment {//历史播放类
 
             }
         });
-
+        listView=(ListView)view.findViewById(R.id.timeplay);
+        inittimeplay();
 
         return view;
+    }
+
+    private void inittimeplay() {
+        for(int i=0 ;i<20;i++){
+            if(i%3==0) {
+                Timeplay apple = new Timeplay("青花瓷", "周杰伦", R.mipmap.ok);
+                timeplayList.add(apple);
+            }
+            else{
+                Timeplay apple=new Timeplay("青花瓷","周杰伦",R.mipmap.nodownload);
+                timeplayList.add(apple);
+            }
+        }
+        TimeplayAdapter adapter=new TimeplayAdapter(getActivity(),R.layout.timeplayitem,timeplayList);
+        listView.setAdapter(adapter);
     }
 }
