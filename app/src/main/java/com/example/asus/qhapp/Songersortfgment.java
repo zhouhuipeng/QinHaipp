@@ -261,7 +261,7 @@ public class Songersortfgment extends Fragment {
             public void onClick(View v) {
                 FragmentManager manager=getFragmentManager(); FragmentTransaction transaction = manager.beginTransaction();//获取fragment
                 //transaction.add(R.id.ly_under,new things());
-                transaction.replace(R.id.ly_center, new Home_pagerfgment());//调用fragment中的事物进行动态操作add添加资源id的对象
+                transaction.replace(R.id.ly_center, new Searchmusicfgment());//调用fragment中的事物进行动态操作add添加资源id的对象
 //提交事物
                 transaction.commit();
             }
