@@ -57,8 +57,14 @@ public class Downloadfgment extends Fragment {//下载列表类
 
     private void initdownloadlist() {
         for(int i=0;i<20;i++){
-            Downloadmusic apple=new Downloadmusic("青花瓷","周杰伦");
-            downloadmusicList.add(apple);
+            if(i%7==0) {
+                Downloadmusic apple = new Downloadmusic("青花瓷", "周杰伦", R.mipmap.pay);
+                downloadmusicList.add(apple);
+            }
+            else{
+                Downloadmusic apple=new Downloadmusic("青花瓷","周杰伦",R.mipmap.nodownload);
+                downloadmusicList.add(apple);
+            }
         }
         DownloadmusicAdapter adapter=new DownloadmusicAdapter(getActivity(),R.layout.downloadmusicitem,downloadmusicList);
         listView.setAdapter(adapter);

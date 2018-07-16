@@ -6,7 +6,7 @@
         android:id="@+id/localmusic"
         android:layout_width="match_parent"
         android:background="#008FFD"
-        android:layout_height="32dp">
+        android:layout_height="36dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"

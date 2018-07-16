@@ -5,10 +5,12 @@ package com.example.asus.qhapp;
  */
 
 public class Downloadmusic {
+    private int imageID;
     private String musicname;
     private  String musicsonger;
 
-    Downloadmusic(String musicname,String musicsonger){
+    Downloadmusic(String musicname,String musicsonger,int imageID){
+        this.imageID=imageID;
         this.musicname=musicname;
         this.musicsonger=musicsonger;
     }
@@ -18,5 +20,9 @@ public class Downloadmusic {
 
     public String getMusicname() {
         return musicname;
+    }
+
+    public int getImageID() {
+        return imageID;
     }
 }

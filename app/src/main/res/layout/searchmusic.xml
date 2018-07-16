@@ -60,12 +60,14 @@
             android:layout_width="36dp"
             android:layout_height="wrap_content"
             android:background="@mipmap/starsort"/>
+
         <TextView
-            android:layout_gravity="center"
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text=" 歌 手 分 类 >"/>
+            android:layout_gravity="center"
+            android:text=" 歌 手 分 类 >"
+            android:textSize="20dp" />
 
     </LinearLayout>
     <View

@@ -14,12 +14,12 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
- * Created by Asus on 2018/7/12.
+ * Created by Asus on 2018/7/16.
  */
 
-public class DownloadmusicAdapter extends ArrayAdapter<Downloadmusic> {
+public class SongerAdapter extends ArrayAdapter<Songer> {
     private int resourceID;
-    public DownloadmusicAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<Downloadmusic> objects) {
+    public SongerAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<Songer> objects) {
         super(context, resource, objects);
         resourceID=resource;
     }
@@ -27,14 +27,12 @@ public class DownloadmusicAdapter extends ArrayAdapter<Downloadmusic> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        Downloadmusic downloadmusic=getItem(position);
+        Songer songer=getItem(position);
         View view= LayoutInflater.from(getContext()).inflate(resourceID,parent,false);
-        TextView downloadmusicname=(TextView)view.findViewById(R.id.downloadmusicname);
-        TextView downloadmusicsonger=(TextView)view.findViewById(R.id.downloadmusicsonger);
-        ImageView ispay=(ImageView)view.findViewById(R.id.ispay);
-        downloadmusicname.setText(downloadmusic.getMusicname());
-        downloadmusicsonger.setText(downloadmusic.getMusicsonger());
-        ispay.setImageResource(downloadmusic.getImageID());
+        ImageView songerimage=(ImageView)view.findViewById(R.id.songerimage);
+        TextView songername=(TextView)view.findViewById(R.id.songername);
+        songerimage.setImageBitmap(songer.getBitmap());
+        songername.setText(songer.getSongername());
         return view;
     }
 }

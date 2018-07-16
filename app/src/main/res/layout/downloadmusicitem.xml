@@ -13,14 +13,15 @@
             android:id="@+id/downloadmusicname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="40px"
+            android:textSize="50px"
             android:layout_weight="1"
             android:text="歌曲名"/>
         <ImageView
+            android:id="@+id/ispay"
             android:layout_marginRight="5dp"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:background="@mipmap/pay"/>
+            />
     </LinearLayout>
     <TextView
         android:layout_below="@+id/hellomusic"
@@ -29,7 +30,7 @@
         android:layout_marginLeft="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30px"
+        android:textSize="40px"
         android:text="歌手名"
         />
     <View

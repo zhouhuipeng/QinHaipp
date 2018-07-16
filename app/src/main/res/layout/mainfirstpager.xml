@@ -91,7 +91,7 @@
                 android:layout_gravity="center"
                 android:background="@mipmap/location"
                 android:layout_width="30dp"
-                android:layout_height="46dp"
+                android:layout_height="36dp"
                 android:layout_weight="1"
                 android:layout_alignTop="@+id/download"
                 />
@@ -102,7 +102,7 @@
             <Button
                 android:id="@+id/download"
                 android:layout_width="30dp"
-                android:layout_height="46dp"
+                android:layout_height="36dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@mipmap/download"
@@ -116,7 +116,7 @@
                 android:layout_gravity="center"
 
                 android:layout_width="30dp"
-                android:layout_height="46dp"
+                android:layout_height="36dp"
                 android:layout_weight="1"
                 android:background="@mipmap/fellowmusic"/>
             <ImageView
@@ -128,7 +128,7 @@
                 android:id="@+id/timeplay"
                 android:layout_gravity="center"
                 android:layout_width="30dp"
-                android:layout_height="46dp"
+                android:layout_height="36dp"
                 android:layout_weight="1"
                 android:background="@mipmap/time"/>
             <ImageView
