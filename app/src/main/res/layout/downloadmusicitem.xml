@@ -3,11 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="3dp"
         android:layout_marginLeft="5dp"
         android:id="@+id/hellomusic"
         android:layout_width="match_parent"
-        android:layout_height="35dp">
+        android:layout_height="36dp">
         <TextView
             android:layout_gravity="center"
             android:id="@+id/downloadmusicname"
@@ -19,15 +19,15 @@
         <ImageView
             android:id="@+id/ispay"
             android:layout_marginRight="5dp"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
             />
     </LinearLayout>
     <TextView
         android:layout_below="@+id/hellomusic"
         android:id="@+id/downloadmusicsonger"
-        android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="40px"
@@ -36,7 +36,7 @@
     <View
         android:layout_below="@+id/downloadmusicsonger"
         android:layout_width="fill_parent"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="3dp"
         android:layout_height="2dp"
         android:background="#EBEBEB" />
 

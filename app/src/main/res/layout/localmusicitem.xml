@@ -3,32 +3,33 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="3dp"
         android:layout_marginLeft="5dp"
         android:id="@+id/hellomusic"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="36dp">
         <TextView
             android:id="@+id/musicname"
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="40px"
+            android:textSize="50px"
             android:text="歌曲名"/>
     </LinearLayout>
     <TextView
         android:layout_below="@+id/hellomusic"
         android:id="@+id/musicsonger"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="3dp"
         android:layout_marginLeft="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30px"
+        android:textSize="40px"
         android:text="歌手名"
         />
     <View
         android:layout_below="@+id/musicsonger"
         android:layout_width="fill_parent"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="3dp"
         android:layout_height="2dp"
         android:background="#EBEBEB" />
 
