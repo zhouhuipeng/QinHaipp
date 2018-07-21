@@ -34,14 +34,14 @@ public class Downloadfgment extends Fragment {//下载列表类
         initdownloadlist();
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {//list监听事件
                 Downloadmusic downloadmusic=downloadmusicList.get(position);//得到点击的list位置以及信息
             }
         });
 
         back.setOnClickListener(new View.OnClickListener() {//返回至主界面状态
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) {//返回按钮监听事件
                 FragmentManager manager=getFragmentManager(); FragmentTransaction transaction = manager.beginTransaction();//获取fragment
                 //transaction.add(R.id.ly_under,new things());
                 transaction.replace(R.id.ly_center, new Home_pagerfgment());//调用fragment中的事物进行动态操作add添加资源id的对象
@@ -55,7 +55,7 @@ public class Downloadfgment extends Fragment {//下载列表类
         return view;
     }
 
-    private void initdownloadlist() {
+    private void initdownloadlist() {//初始化下载list内容
         for(int i=0;i<20;i++){
             if(i%7==0) {
                 Downloadmusic apple = new Downloadmusic("青花瓷", "周杰伦", R.mipmap.pay);

@@ -95,7 +95,7 @@ public class Home_pagerfgment extends Fragment {//Fragment类进行设置为以�
             }
         });
 
-        search.setOnClickListener(new View.OnClickListener() {
+        search.setOnClickListener(new View.OnClickListener() {//将mainpager中的ly_center加载搜索界面
             @Override
             public void onClick(View v) {
                 /*FragmentManager manager=getFragmentManager(); FragmentTransaction transaction = manager.beginTransaction();//获取fragment

@@ -45,14 +45,14 @@ public class Timeplayfgment extends Fragment {//历史播放类
         return view;
     }
 
-    private void inittimeplay() {
+    private void inittimeplay() {//初始化历史播放list内容
         for(int i=0 ;i<20;i++){
             if(i%3==0) {
                 Timeplay apple = new Timeplay("青花瓷", "周杰伦", R.mipmap.ok);
                 timeplayList.add(apple);
             }
             else{
-                Timeplay apple=new Timeplay("青花瓷","周杰伦",R.mipmap.nodownload);
+                Timeplay apple=new Timeplay("青花瓷","周杰伦",R.mipmap.nodownload);//nodewmload是一个透明图
                 timeplayList.add(apple);
             }
         }

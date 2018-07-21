@@ -14,12 +14,12 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
- * Created by Asus on 2018/7/16.
+ * Created by Asus on 2018/7/21.
  */
 
-public class SongerAdapter extends ArrayAdapter<Songer> {//歌手list的适配器
+public class SearchResultAdapter extends ArrayAdapter<SearchResult> {//搜索结果的list适配器
     private int resourceID;
-    public SongerAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<Songer> objects) {
+    public SearchResultAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<SearchResult> objects) {
         super(context, resource, objects);
         resourceID=resource;
     }
@@ -27,12 +27,14 @@ public class SongerAdapter extends ArrayAdapter<Songer> {//歌手list的适配�
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        Songer songer=getItem(position);
+        SearchResult searchResult=getItem(position);
         View view= LayoutInflater.from(getContext()).inflate(resourceID,parent,false);
-        ImageView songerimage=(ImageView)view.findViewById(R.id.songerimage);
-        TextView songername=(TextView)view.findViewById(R.id.songername);
-        songerimage.setImageBitmap(songer.getBitmap());
-        songername.setText(songer.getSongername());
+        TextView searchmusicname=(TextView)view.findViewById(R.id.searchmusicname);
+        TextView searchmusicsonger=(TextView)view.findViewById(R.id.searchmusicsonger);
+        ImageView ispay=(ImageView)view.findViewById(R.id.ispay);
+        searchmusicname.setText(searchResult.getMusicname());
+        searchmusicsonger.setText(searchResult.getMusicsonger());
+        ispay.setImageResource(searchResult.getImageID());
         return view;
     }
 }

@@ -20,26 +20,22 @@
                 android:layout_marginEnd="10dp"
                 android:layout_height="40dp"
                 android:background="@mipmap/back"/>
-            <ImageView
-                android:layout_width="36dp"
-                android:layout_marginTop="5dp"
-                android:background="@mipmap/mkf"
-                android:layout_marginEnd="10dp"
-                android:layout_height="40dp" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:orientation="horizontal"
                 android:layout_height="match_parent">
-                <EditText
+                <AutoCompleteTextView
+                    android:id="@+id/searinputtext"
                     android:layout_width="280dp"
                     android:layout_height="match_parent"
                     android:hint="歌曲/MV/专辑/歌单/用户/歌词"
+                    android:dropDownWidth="match_parent"
                     android:textSize="36px"
                     android:layout_weight="0.55" />
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/gosearch"
                     android:layout_width="64dp"
                     android:layout_height="match_parent"
                     android:background="#008FFD"

@@ -25,7 +25,7 @@ public class Fellowmusicfgment extends Fragment {//伴奏音乐类
         Button back=(Button)view.findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {//返回主界面
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) {//返回按钮监听事件
                 FragmentManager manager=getFragmentManager(); FragmentTransaction transaction = manager.beginTransaction();//获取fragment
                 //transaction.add(R.id.ly_under,new things());
                 transaction.replace(R.id.ly_center, new Home_pagerfgment());//调用fragment中的事物进行动态操作add添加资源id的对象

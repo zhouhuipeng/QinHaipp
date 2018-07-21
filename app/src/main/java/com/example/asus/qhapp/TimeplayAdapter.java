@@ -18,7 +18,7 @@ import java.util.List;
  * Created by Asus on 2018/7/14.
  */
 
-public class TimeplayAdapter extends ArrayAdapter<Timeplay> {
+public class TimeplayAdapter extends ArrayAdapter<Timeplay> {//历史播放list的适配器
     private int resourceID;
     public TimeplayAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<Timeplay> objects) {
         super(context, resource, objects);

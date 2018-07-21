@@ -17,7 +17,7 @@ import java.util.List;
  * Created by Asus on 2018/7/12.
  */
 
-public class DownloadmusicAdapter extends ArrayAdapter<Downloadmusic> {
+public class DownloadmusicAdapter extends ArrayAdapter<Downloadmusic> {//下载音乐list的适配器
     private int resourceID;
     public DownloadmusicAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<Downloadmusic> objects) {
         super(context, resource, objects);

@@ -5,9 +5,9 @@ package com.example.asus.qhapp;
  */
 
 public class Timeplay {
-    private int imageID;
-    private String musicname;
-    private String musicsonger;
+    private int imageID;//历史播放音乐是否付费
+    private String musicname;//音乐名称
+    private String musicsonger;//歌手名称
     Timeplay(String musicname, String musicsonger,int imageID){
         this.musicname=musicname;
         this.musicsonger=musicsonger;

@@ -31,7 +31,7 @@ import okhttp3.Response;
  * Created by Asus on 2018/7/15.
  */
 
-public class Songersortfgment extends Fragment {
+public class Songersortfgment extends Fragment {//本页面通过一系列的TextView来实现分类效果，每个TextView都有自己的一个监听事件
     private List<Songer> songerlist=new ArrayList<>();
     public OkHttpClient okHttpClient;
     ListView listview;

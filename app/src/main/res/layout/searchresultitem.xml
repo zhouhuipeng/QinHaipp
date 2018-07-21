@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/hellomusic"
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/searchmusicname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50px"
+            android:layout_weight="1"
+            android:text="歌曲名"/>
+        <ImageView
+            android:id="@+id/ispay"
+            android:layout_marginRight="5dp"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_below="@+id/hellomusic"
+        android:id="@+id/searchmusicsonger"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:text="歌手名"
+        />
+    <View
+        android:layout_below="@+id/searchmusicsonger"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="3dp"
+        android:layout_height="2dp"
+        android:background="#EBEBEB" />
+</RelativeLayout>

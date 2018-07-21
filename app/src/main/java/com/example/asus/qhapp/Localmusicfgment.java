@@ -59,7 +59,7 @@ public class Localmusicfgment extends Fragment {//本地音乐类
         return view;
     }
 
-    private void initlocalmusic() {
+    private void initlocalmusic() {//初始化本地音乐list内容
         for(int i=0;i<20;i++){
             Localmusic music=new Localmusic("青花瓷","周杰伦");
             localmusicList.add(music);

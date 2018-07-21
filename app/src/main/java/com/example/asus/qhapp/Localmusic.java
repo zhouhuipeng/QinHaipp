@@ -5,8 +5,8 @@ package com.example.asus.qhapp;
  */
 
 public class Localmusic {
-    private String musicname;
-    private String musicsonger;
+    private String musicname;//本地音乐名称
+    private String musicsonger;//本地音乐歌手
     Localmusic(String musicname,String musicsonger){
         this.musicname=musicname;
         this.musicsonger=musicsonger;

@@ -16,7 +16,7 @@ import java.util.List;
  * Created by Asus on 2018/7/12.
  */
 
-public class LocalmusicAdapter extends ArrayAdapter<Localmusic> {
+public class LocalmusicAdapter extends ArrayAdapter<Localmusic> {//本地音乐list适配器
     private int resourceID;
     public LocalmusicAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<Localmusic> objects) {
         super(context, resource, objects);
