@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/QHapp.iml" filepath="$PROJECT_DIR$/QHapp.iml" />
+      <module fileurl="file://D:\project\QinHaipp\QHapp.iml" filepath="D:\project\QinHaipp\QHapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QinHaipp.iml" filepath="$PROJECT_DIR$/QinHaipp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\project\QinHaipp\app\app.iml" filepath="D:\project\QinHaipp\app\app.iml" />
     </modules>
   </component>
 </project>
