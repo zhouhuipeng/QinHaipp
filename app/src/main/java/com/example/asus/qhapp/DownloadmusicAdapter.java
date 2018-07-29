@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -35,6 +36,12 @@ public class DownloadmusicAdapter extends ArrayAdapter<Downloadmusic> {//下载�
         downloadmusicname.setText(downloadmusic.getMusicname());
         downloadmusicsonger.setText(downloadmusic.getMusicsonger());
         ispay.setImageResource(downloadmusic.getImageID());
+        ispay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(),"正在下载中.......",Toast.LENGTH_SHORT).show();
+            }
+        });
         return view;
     }
 }
